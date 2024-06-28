@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bebas';
+    src: url(pasta/fontes/BebasNeue.otf) format(opentype);
+}
+@font-face {
+    font-family: 'idroid';
+    src: url(pasta/fontes/idroid.otf) format(opentype);
+}
+body {
+    background-color: #84E1AD;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+header {
+    background-image: linear-gradient(180deg, #3DDA84, #289156, #1A5C38);
+    color: white;
+    margin-top: 0px;
+}
+header > h1 {
+    text-align: center;
+    font: normal normal 3em 'Bebas', sans-serif;
+    padding-top: 20px;
+}
+header > h2 {
+    text-align: center;
+    font-size: 1em;
+    font-weight: normal;
+    width: 400px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+header > nav > span {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: bold;
+    color: #84E1AD;
+    padding: 3px;
+    border-radius: 3px;
+}
+header > nav > span:hover {
+    color: #1A5C38;
+    background-color: #84E1AD;
+}
+header > nav {
+    padding-bottom: 7px;
+}
+ul {
+    display: inline-block;
+}
+.destaque {
+    color: #289156;
+    font-weight: bold;
+}
+main {
+    background-color: white;
+    padding: 10px 20px;
+    width: 900px;
+    margin: auto;
+    border-radius: 0% 0% 5px 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.333);
+}
+main > h2 {
+    font-family: 'idroid';
+    background-image: linear-gradient(90deg, #84e1ac98, rgb(255, 255, 255));
+    padding: 3px 10px;
+    color: #1A5C38;
+    border-radius: 10px;
+}
+main > h1 {
+    font-family: 'idroid';
+    padding: 3px 3px;
+    color: #1A5C38;
+}
+main > p {
+    text-align: justify;
+    text-indent: 30px;
+}
+img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+img#droid {
+    display: block;
+    width: 300px;
+    height: 195px;
+    margin: auto;
+}
+p > a {
+    color: #289156;
+    font-weight: bold;
+    text-decoration: none;
+}
+div#video {
+    background-color: #1A5C38;
+    padding: 20px 40px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+div#extra {
+    border-radius: 10px;
+    background-color: #84E1AD;
+    padding-bottom: 7px;
+    margin-top: 15px;
+}
+div#extra > p {
+    text-indent: 30px;
+    padding: 0px 7px 7px 7px
+}
+div#extra > h2 {
+    padding: 7px;
+    color: white;
+    background-color: #289156;
+    border-radius: 10px 10px 0px 0px;
+    margin: 0px;
+}
+div#extra > span {
+    padding-right: 200px;
+}
+a:hover {
+    text-decoration: underline;
+}
+footer {
+    text-align: center;
+    background-color: #1A5C38;
+    padding: 7px;
+    font-style: italic;
+    color: white;
+}

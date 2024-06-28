@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vídeo em HTML5</title>
+</head>
+<body>
+    <h1> Inserindo vídeos hospedados localmente </h1>
+    <!-- hospedagem local vai custar mais devido o trafego de dados -->
+    <p> Esse vídeo será hospedado no sue próprio servidor </p>
+    <video src="Dark Souls 3 - Abyss Watchers Boss Fight (4K 60FPS).mp4" controls width="400" poster="../ex003/pasta/Abyss_Watchers(JPG).jpg" loop></video>
+    <!-- alternativa -->
+    <video controls width="400" poster="../ex003/maliketh-the-black-blade-4k(JPG).jpg" loop>
+        <!-- primeiro src não é valida : prox. src -->
+        <source src="Elden Ring - Maliketh the Black Blade _ Beast Clergyman Boss Fight.mp4" type="video/mp4">
+    </video>
+    <h1> Inserindo vídeos do Youtube </h1>
+    <!-- vídeos hospedados no youtube contribuem para o algoritmo de busca dos navegadores -->
+    <iframe width="400" height="225" src="https://www.youtube.com/embed/La0VERFipsk?si=5sbagCWM9ie-PTe3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="400" height="225" src="https://www.youtube.com/embed/8kqD2yA7Fls?si=NeKaQZKRbGZ1Isl8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

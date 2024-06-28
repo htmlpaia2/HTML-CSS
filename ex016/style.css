@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: linear-gradient(to top, #EAF27C, #CE8964);
+}
+main {
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    /* param. de margin/padding: superior, direita, inferior, esquerda */
+    border-radius: 20px;
+    /* param. de border-radius: sup. esquerdo, sup. direito, inf. direito, inf. esquerdo */
+    box-shadow: 5px 5px 15px 0px #a20020ac; 
+    /*
+    param. de box-shadow: sombra01, sombra02, ... 
+    sombras: delocamento_horizontal deslocamento_vertical blur tamanho_da_sombra cor;
+
+    valores nagativos para os deslocamentos manifestam as sombras no lado oposto
+    valores negativos para o tamanho_da_sombra reduz o tamanho dela
+     
+    sombra para dentro da box
+    box-shadow: inset 5px 5px 15px 0px #832232;
+    */
+
+}
+h1 {
+    color: #a20020;
+    text-align: center;
+    text-shadow: 2px 2px 4px #630114b8;
+    /* param. de text-shadow: delocamento_horizontal deslocamento_vertical blur cor */
+}
+h2 {
+    color: #3066BE;
+}
+p {
+    color: #0B0033;
+    text-align: justify;
+}
+/*
+#EAF27C
+#CE8964
+#832232
+#370031
+#0B0033
+*/

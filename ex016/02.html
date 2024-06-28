@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gradientes em CSS </title>
+    <style>
+        /* configurações globais de CSS */
+        * {
+            height: 100%;
+        }
+        body {
+            /* linear-gradient(to right/to left/to top/to bottom , ...) */
+            /* também é valido usar linear-gradient(---deg) */
+            /* posso também destacar uma cor em --% de onde ela se insere no gradiente */
+            background-image: linear-gradient(225deg, #4E2FD2 10%, #A439A1 30%, #EE516C 50%, #FE993F 70%, #F9EB42 90%);
+            /* existe também outras opções de gradiente, como radial-gradiet(circle, ...) */
+        }
+        h1 {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1> Testando Gradiente </h1>
+</body>
+</html>

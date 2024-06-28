@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fontes em CSS </title>
+    <style>
+        body {
+            /*
+            fontes de nome composto são escritas entre ''
+            caso meu dispositivo não tenha a fonte que eu quero é importante sugerir outras após a vírgula
+            pesquisar "CSS safe font combinations"
+            ao invés de selecionar uma fonte posso selecionar uma característica de fontes e deixar o navegador escolher alguma com essa característica
+            ex: sans-serif, serif, monospace
+            */
+            font-family: 'Courier New', Courier, monospace;
+            /*
+            Medidas Absolutas: cm, mm, in, px, pt, pc;
+            Medidas Relativas: em (relativo ao 'M'), ex (relativo ao 'x'), rem (relativo ao 'M' da fonte do body), vw (% de view width), vh (% de view heigth);
+            Medidas Recomendadas: px e em;
+            : Todas a medidas são referentes ao corpo de uma fonte
+            geralmente: 1em = 16px
+            */
+            font-size: 16px;
+            /*
+            O peso de uma fonte pode variar entre: lighter, normal, bold e bolder
+            Ou númericamente: 100, 200, 300, ... 900
+            Nem todas as fontes possuem todas as variações possíveis
+            */
+            font-weight: normal;
+            /* ítalico ou normal */
+            font-style: italic;
+            /* sublinhado */
+            text-decoration: underline;
+            /* shorthand font: font-style -> font-weight -> font-size -> font-family */
+            font: italic normal 16px 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1> Trabalhando com fontes </h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corrupti ex, assumenda vitae pariatur ipsa porro optio dolores non provident? Debitis dolore doloribus vel, dolor voluptatem eveniet veniam nam! Iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nisi asperiores ipsam ex iste et temporibus corrupti, cumque in amet quo doloribus? Nam blanditiis mollitia placeat tempore tempora aperiam veniam.</p>
+    <h2> Subtítulo do exercício </h2>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officia laborum, saepe sequi deserunt sit non cumque, laboriosam nobis nulla fugit assumenda? Ipsa rerum libero itaque voluptas aliquam, quasi at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque blanditiis aspernatur rem, est obcaecati iusto distinctio sit quo quos deleniti accusantium doloremque quae omnis nostrum voluptatum ad exercitationem. Molestiae, nulla.</p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mídias em HTML5 </title>
+</head>
+<body>
+    <h1> Imagens dinâmicas </h1>
+    <p> Tente abrir essa pagina em diversos dispositivos ou simplesmente 
+        aumente e diminua o tamanho do seu navegador
+    </p>
+    <!-- usando CSS e JavaScript pode até ser melhor -->
+    <!-- valido alterar width por height -->
+    <!-- utilizando picture dessa forma é importante respeitar a ordem do menor ao maior -->
+    <!-- também é importante usar o param. "max-width: ---px" ou invés de "min-width: ---px" -->
+    <picture>
+        <source media="(max-width: 750px)" srcset="Untitled-1.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="Untitled-2.jpg" type="image/jpg">
+        <img src="Untitled-3.jpg" alt="imagem">
+    </picture>
+    <h1> Reproduzindo Aúdios </h1>
+    <p> Vamos aprender a reproduzir aúdios em HTML5 </p>
+    <!-- dependendo do navegador o autoplay não vai funcionar -->
+    <!-- dependendo também do navegador alguns formatos podem ser inconpativeis -->
+    <!-- formatos como .mp3/.wav/.ogg etc -->
+    <audio src="guanacast-33.mp3" controls autoplay></audio>
+    <!-- outra alternativa -->
+    <audio controls preload="metadata">
+        <!-- primeiro src não é valida : prox. src -->
+        <!-- verificar media type para cada formato -->
+        <source src="Headlands - National Sweetheart.mp3" type="audio/mpeg">
+        <source src="Headlands - National Sweetheart.ogg" type="audio/ogg">
+        <source src="Headlands - National Sweetheart.wav" type="audio/wav">
+        <!-- o navegador vai tentar reproduzir, respectivamente na ordem, todos os formatos -->
+        <!-- caso não seja possivél reproduzir nenhum deles... -->
+        <p> Infelizmente seu navegador não consegue reproduzir o aúdio. 
+            Clique <a href="Headlands - National Sweetheart.mp3">aqui</a> para baixar o MP3. </p>
+    </audio>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trabalhando com links </title>
+</head>
+<body>
+    <h1> Usando links externos </h1>
+    <!-- "a" de anchor -->
+    <!-- target="_blank" é o que faz minha pagina continuar aberta -->
+    <p> Você pode acessar <a href="https://github.com/gabrieldsn2006" target="_blank" rel="external">meu github</a> </p>
+    <p> Você pode acessar <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27" target="_blank">esse vídeo</a> </p>
+    <h1> Usando links internos </h1>
+    <!-- target="_self" abre o link na mesma pagina -->
+    <p> Esta é a primeira pagina do site. Se você quiser, pode acessar também a <a href="02.html" rel="next" target="_self">segunda pagina</a> </p>
+    <p> Ou a <a href="pasta/03.html">terceira pagina</a> </p>
+    <h1> Link para download </h1>
+    <!-- download="" apenas assim pode já funcionar em alguns navegadores --> 
+    <!-- type=""  verificar o media type correspondente no link iana site -->
+    <p> <a href="pasta/pdf.pdf" download="pdf.pdf" type="application/pdf">download pdf.pdf</a> </p>
+    <p> <a href="pasta/pdf.zip" download="pdf.zip" type="application/zip">download pdf.zip</a> </p>
+    <p> <a href="#">não tem link = #</a> </p>
+    <p> <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank">iana site</a> </p>
+</body>
+</html>

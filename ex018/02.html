@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fonte Externas </title>
+    <!-- dafont.com -->
+    <!-- whatfontis.com -->
+    <style>
+        @font-face {
+            font-family: 'Angel';
+            src: url(fonts/Angel\ wish.ttf) format(truetype);
+            /*
+            posso colocar mais de uma url, caso meu navegador não seja compatível com algum formato
+            tipos de format: 
+            - opentype (.otf)
+            - truetype (.ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+            */
+        }
+        @font-face {
+            font-family: 'love';
+            src: url(fonts/Valentine\ Cute.ttf);
+        }
+        body {
+            font-family: 'love', Arial, sans-serif;
+        }
+        h1 {
+            font-family: 'Angel', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1> Título </h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestiae voluptate repellat quam expedita quae qui explicabo odio? Eaque vero, exercitationem consequatur facere quae labore laudantium corporis recusandae quaerat at?</p>
+</body>
+</html>

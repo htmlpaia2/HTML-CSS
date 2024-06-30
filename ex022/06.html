@@ -6,21 +6,27 @@
     <title>Document</title>
     <style>
         body {
-            padding: 0px;
-            margin: 0px;
-            height: 100vh;
+            height: 100%;
+            /*
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed; scroll é outra opção 
+
+            background: color image repeat attachment position
+            ^^^ shorthand sem background-size
+            */
+            background: black url(imagens/wallpaper002.jpg) no-repeat fixed center center;
+            background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 450px;
             padding: 10px;
-            margin: auto;
+            margin: 15px auto;
             border: 1px solid darkblue;
             border-radius: 15px;
         }
@@ -29,6 +35,9 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti ullam molestiae aliquid. Sit totam modi ea velit unde iure maiores iusto. Alias, optio minus. Cupiditate quibusdam repellat at optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam aperiam minima quis? Maiores, vel qui laborum aliquid vitae ex! Temporibus nostrum soluta debitis repellendus cum a quisquam ab reprehenderit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque optio aliquam distinctio ipsum cum inventore aperiam possimus alias voluptatum dolore voluptatibus dolorum debitis dolorem, adipisci accusamus harum labore quam dolores?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti ullam molestiae aliquid. Sit totam modi ea velit unde iure maiores iusto. Alias, optio minus. Cupiditate quibusdam repellat at optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam aperiam minima quis? Maiores, vel qui laborum aliquid vitae ex! Temporibus nostrum soluta debitis repellendus cum a quisquam ab reprehenderit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque optio aliquam distinctio ipsum cum inventore aperiam possimus alias voluptatum dolore voluptatibus dolorum debitis dolorem, adipisci accusamus harum labore quam dolores?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti ullam molestiae aliquid. Sit totam modi ea velit unde iure maiores iusto. Alias, optio minus. Cupiditate quibusdam repellat at optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam aperiam minima quis? Maiores, vel qui laborum aliquid vitae ex! Temporibus nostrum soluta debitis repellendus cum a quisquam ab reprehenderit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque optio aliquam distinctio ipsum cum inventore aperiam possimus alias voluptatum dolore voluptatibus dolorum debitis dolorem, adipisci accusamus harum labore quam dolores?</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti ullam molestiae aliquid. Sit totam modi ea velit unde iure maiores iusto. Alias, optio minus. Cupiditate quibusdam repellat at optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quisquam aperiam minima quis? Maiores, vel qui laborum aliquid vitae ex! Temporibus nostrum soluta debitis repellendus cum a quisquam ab reprehenderit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque optio aliquam distinctio ipsum cum inventore aperiam possimus alias voluptatum dolore voluptatibus dolorum debitis dolorem, adipisci accusamus harum labore quam dolores?</p>
     </main>
 </body>

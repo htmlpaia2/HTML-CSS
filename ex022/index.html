@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Teste de Imagem de Fundo </title>
+    <style>
+        body {
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+
+        div.cube {
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+
+        div#c0 {
+            background-color: aqua;
+        }
+
+        div#c1 {
+            background-image: linear-gradient(180deg, yellow, red);
+        }
+
+        div#c2 {
+            background-image: url(imagens/pattern003.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="cube" id="c0"></div>
+    <div class="cube" id="c1"></div>
+    <div class="cube" id="c2"></div>
+</body>
+</html>

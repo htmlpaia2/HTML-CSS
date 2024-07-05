@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Desafio 13 (parte 3) </title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 7px;
+        }
+        th {
+            background-color: darkblue;
+            color: white;
+        }
+        .nota {
+            text-align: center;
+        }
+        .f {
+            background-color: lightgray;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col"> tipo de disciplina </th>
+                <th rowspan="2" scope="col"> nome da cadeira </th>
+                <th colspan="3" scope="colgroup"> notas </th>
+                <th rowspan="2" scope="col"> média </th>
+            </tr>
+            <tr>
+                <th scope="col"> AV1 </th>
+                <th scope="col"> AV2 </th>
+                <th scope="col"> AV3 </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Avaliativa</td>
+                <td>Post. Prof. Com. Interp.</td>
+                <td class="nota">9.3</td>
+                <td class="nota">9.8</td>
+                <td class="nota">9.1</td>
+                <td class="nota">9.3</td>
+            </tr>
+            <tr>
+                <td>Avaliativa</td>
+                <td>Fund. Sist. Comp.</td>
+                <td class="nota">9.6</td>
+                <td class="nota">9.2</td>
+                <td class="nota">9.3</td>
+                <td class="nota">9.3</td>
+            </tr>
+            <tr>
+                <td>Avaliativa</td>
+                <td>Modelagem Prob. Mat.</td>
+                <td class="nota">10</td>
+                <td class="nota">10</td>
+                <td class="nota">10</td>
+                <td class="nota">10</td>
+            </tr>
+            <tr>
+                <td>Nota Unica</td>
+                <td>Desafios do Ciberespaço</td>
+                <td class="nota">-</td>
+                <td class="nota">-</td>
+                <td class="nota">10</td>
+                <td class="nota">10</td>
+            </tr>
+            <tr>
+                <td>Avaliativa</td>
+                <td>Rac. Logic. Alg.</td>
+                <td class="nota">10</td>
+                <td class="nota">10</td>
+                <td class="nota">10</td>
+                <td class="nota">10</td>
+            </tr>
+            <tr>
+                <td>Nota Unica</td>
+                <td>Experim. Orient.</td>
+                <td class="nota">-</td>
+                <td class="nota">-</td>
+                <td class="nota">10</td>
+                <td class="nota">10</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="5" scope="row" class="f"> média final </th>
+                <td class="f">9.7</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+
+<!-- fazer logo o da unifor -->
+            <!-- tipo disciplina notas (AV1 AV2 AV3) média -->
+            <!-- 9.3 9.8 9.1
+                 9.6 9.2 9.3 -->

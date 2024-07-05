@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Uso de tabelas grades </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th, caption {
+            border: 1px solid black;
+            padding: 7px;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        tbody > tr:nth-child(odd) { /* efeito zebra (2n) = (even) ; (2n-1) = (odd) */
+            background-color: lightgray;
+        }
+        thead > tr > th {
+            position: sticky; /* mesmo dando scroll na página permanece sendo exibido */
+            background-color: gray;
+            top: -1px; /* ajuste p/ ficar certinho */
+        }
+        tfoot > tr {
+            position: sticky;/* mesmo dando scroll na página permanece sendo exibido */
+            background-color: gray;
+            bottom: 0;
+        }
+        caption {
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+        #mine {
+            background-color: yellow;
+        }
+        .num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    anatomia para tabelas grandes
+    table
+        caption
+        thead
+            tr, td, th
+        tbody
+            tr, td, th
+        tfoot
+            tr, td, th
+    -->
+    <table>
+        <caption> População das Unidades Federais </caption>
+
+        <thead>
+            <!-- scope é meramente semântico -->
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col"> População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 058 931</td>
+            </tr>
+            <tr id="mine">
+                <td>Ceará</td>
+                <td class="num">8 794 957</td>
+            </tr>
+            <tr>
+                <td> --- </td>
+                <td class="num"> --- </td>
+            </tr>
+            <tr>
+                <td> --- </td>
+                <td class="num"> --- </td>
+            </tr>
+            <tr>
+                <td> --- </td>
+                <td class="num"> --- </td>
+            </tr>
+            <tr>
+                <td> --- </td>
+                <td class="num"> --- </td>
+            </tr>
+            <tr>
+                <td> --- </td>
+                <td class="num"> --- </td>
+            </tr>
+            <tr>
+                <td> --- </td>
+                <td class="num"> --- </td>
+            </tr>
+            <tr>
+                <td> --- </td>
+                <td class="num"> --- </td>
+            </tr>
+            <tr>
+                <td> --- </td>
+                <td class="num"> --- </td>
+            </tr>
+            <tr>
+                <td> --- </td>
+                <td class="num"> --- </td>
+            </tr>
+            <tr>
+                <td> --- </td>
+                <td class="num"> --- </td>
+            </tr>
+            <tr>
+                <td> --- </td>
+                <td class="num"> --- </td>
+            </tr>
+            <tr>
+                <td> --- </td>
+                <td class="num"> --- </td>
+            </tr>
+            <tr>
+                <td> --- </td>
+                <td class="num"> --- </td>
+            </tr>
+            <tr>
+                <td> --- </td>
+                <td class="num"> --- </td>
+            </tr>
+            <tr>
+                <td> --- </td>
+                <td class="num"> --- </td>
+            </tr>
+            <tr>
+                <td> --- </td>
+                <td class="num"> --- </td>
+            </tr>
+            <tr>
+                <td> --- </td>
+                <td class="num"> --- </td>
+            </tr>
+            <tr>
+                <td> --- </td>
+                <td class="num"> --- </td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>135 327 339</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- apenas mostrando q oq estiver em "position: sticky;" deixa de aparecer quando a tabela tbm deixa de aparecer -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, facilis tempora ipsam adipisci quam ad deleniti accusamus ut voluptas ipsa. Harum, amet! Deleniti, dolore. Eum enim distinctio rem eius ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem repellendus exercitationem ex nesciunt est dolorum provident quibusdam! Modi ad odit beatae tempore architecto obcaecati excepturi, atque iure repudiandae, culpa adipisci. Lorem, ipsum dolor sit amet consectetur adipisicing elit. A sapiente mollitia incidunt quidem commodi tempora nesciunt temporibus, deserunt suscipit asperiores nemo vel voluptatem repellat eligendi reiciendis explicabo laborum recusandae cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptates et ipsum libero id ipsam doloribus possimus ut ad, rerum perspiciatis obcaecati ab rem sunt aut dignissimos nostrum. Blanditiis, iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eaque unde est harum quos voluptate, tenetur accusantium aliquid ducimus incidunt tempore quam, earum totam eos quia ex magni. Ipsam, possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, totam nam. Est corrupti quos suscipit soluta quasi dolore quaerat ullam molestias perferendis dolorem qui voluptatibus tenetur, natus delectus aliquam animi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa non accusantium quam, ipsa, fugit aspernatur reiciendis corporis atque, optio delectus dolore fuga. Nihil repellat quis corrupti maxime ratione quidem ullam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam nesciunt voluptates, animi asperiores obcaecati non facilis alias, debitis corrupti maxime vel tenetur fugiat neque laudantium sunt? Nam cum omnis suscipit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi deserunt ratione, repellendus aspernatur quod iusto molestias quaerat sed deleniti ad corrupti quidem iste optio id. Necessitatibus iste eius quis voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum, facere at modi illum officia odio reiciendis asperiores blanditiis reprehenderit suscipit sunt inventore velit, autem qui nihil harum! Ratione, id. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi nostrum animi eum voluptatibus, a modi porro mollitia dolorem quam hic pariatur repudiandae delectus, dolores labore distinctio nihil maiores velit quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, illo delectus quod maiores, hic sunt sed possimus quis provident laudantium, fuga aliquam soluta voluptate dignissimos accusantium distinctio repudiandae nesciunt. Autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus libero explicabo maxime doloremque soluta placeat reiciendis? Praesentium vero illum id perspiciatis, fugiat impedit omnis corporis architecto provident, perferendis beatae quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores impedit vero quia voluptate exercitationem, omnis pariatur, perferendis, facilis ullam blanditiis adipisci ducimus neque animi fuga praesentium libero eos expedita non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aperiam, exercitationem temporibus blanditiis optio eligendi earum laboriosam fugiat? Architecto exercitationem dolorum dicta! Aliquid alias nam rerum doloremque dolore expedita tempore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos asperiores, sunt repudiandae nulla sapiente veritatis exercitationem adipisci commodi officia dolores consectetur ad ipsam enim magni nobis qui quod a. Earum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium dolores omnis maxime dolorem! Non voluptatibus iusto alias quo qui blanditiis ratione facilis iure optio? Unde fuga ea autem consequuntur asperiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, exercitationem? Temporibus similique, ab suscipit, ex possimus dolorum mollitia soluta, quas aut distinctio nemo sint. Odit, error! Autem in hic consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus earum corrupti exercitationem voluptates, commodi a ducimus aut qui nam obcaecati temporibus ea saepe itaque repellat doloremque aliquam laborum eligendi quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum a reprehenderit impedit vero ratione laudantium voluptatibus sequi facilis saepe? Tempora hic rerum cupiditate incidunt similique enim deserunt quae eos consequuntur?</p>
+</body>
+</html>

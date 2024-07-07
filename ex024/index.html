@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Estudo de iframe </title>
+    <style>
+        iframe {
+            height: 400px;
+            width: 400px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1> Testando o uso de um iframe </h1>
+    <p> Acessando o site do <a href="https://www.cursoemvideo.com" target="_blank">CursoemVideo</a> para aprendeder a programar. </p>
+    <!-- agora usando um iframe -->
+    <p> 
+        Acessando o site do 
+        <!-- tamanho padrão: 300px 150px -->
+        <iframe src="https://www.cursoemvideo.com" frameborder="1">
+            <!-- mensagem exibida caso o navegador não seja compativel com o iframe (em celulares por exemplo) -->
+            <a href="https://www.cursoemvideo.com"> CursoemVideo</a>
+        </iframe>
+        para aprendeder a programar.
+    </p>
+    <!-- alguns sites não permitem acesso de um iframe -->
+    <p>
+        O site do 
+        <iframe src="https://www.google.com" frameborder="1"> 
+            mensagem exibida caso o navegador não seja compativel com o iframe (em celulares por exemplo)
+        </iframe> 
+        por exemplo.
+    </p>
+</body>
+</html>

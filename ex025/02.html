@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Teste de Formulário </h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="user"> Usuário: </label>
+            <input type="text" name="usuario" id="user" required minlength="5" maxlength="20" size="18" placeholder="digite seu usuario" autocomplete="username">
+            <!-- lembrando que o "name" só vai ser usado na action="cadastro.php" -->
+            <!-- size é medido em: ? (teoricamente é o número de caracteres) -->
+            <!-- placeholder é o input hint -->
+            <!-- posso tbm usar o "autocomplete" no input -->
+        </p>
+
+        <p>
+            <label for="password"> Senha: </label>
+            <input type="password" name="senha" id="password" required minlength="8" maxlength="16" placeholder="digite sua senha" autocomplete="current-password">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">    
+            <input type="reset" value="Limpar">    
+        </p>
+    </form>
+</body>
+</html>

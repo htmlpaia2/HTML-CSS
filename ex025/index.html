@@ -12,10 +12,33 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <fomr>
-        <p>Nome: <input type="text" name="nome" id="name"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="last_name"></p>
-        <p><input type="submit" value="Enviar"></p>
-    </fomr>
+    <form autocomplete="off" method="post" action="cadastro.php"> <!-- no action (php) vai o "name" -->
+        <p>
+            <label for="name"> Nome: </label> <!-- na label vai o "id" -->
+            <input type="text" name="nome" id="name">
+        </p>
+        
+        <p>
+            <label for="last_name"> Sobrenome: </label> 
+            <input type="text" name="sobrenome" id="last_name">
+        </p>
+
+        <p> <input type="submit" value="Enviar"> </p> 
+        <!-- 
+        method padrão do <form> (get) mostra as informações na url
+        ex: 
+        file:///C:/Users/Gabriel/Desktop/Nova%20pasta/CursoemVideo(HTLM-CSS)/HTML-CSS/ex025/cadastro.php?nome=Gabriel&sobrenome=Nobre
+        outro ex:
+        pesquisa do google
+        https://www.google.com/search?q=videos+de+gatinhos&oq=videos+de+gatinhos
+        -->
+
+        <!-- 
+        já o method post esconde um pouco as informações mas ainda assim não é seguro. para encontrar as informações é só fazer o seguinte:
+        ctrl + shift + i -> aba de Network -> "cadastro.php" (pq esse foi o ex.) -> Payload -> Form Data (aqui estão as informações)
+        -->
+
+        <!-- o method get só consegue enviar 3000 bytes (cerca de 3000 letras), para ter mais segurança, ou para envir informações maiores (como uma imagem) usar o method post -->
+    </form>
 </body>
 </html>

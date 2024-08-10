@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário </title>
+</head>
+<body>
+    <h1> Exemplo de Formulário </h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="y"> Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="y" min="1924" max="2024" oninput="calculo_de_idade()">
+        </p>
+
+        <p>
+            <label for="age"> Sua idade é: </label>
+            <output id="age"> 0 </output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function calculo_de_idade() {
+            let ano_atual = new Date().getFullYear();
+            age.innerHTML = Number(ano_atual) - Number(y.value);
+        }
+    </script>
+</body>
+</html>

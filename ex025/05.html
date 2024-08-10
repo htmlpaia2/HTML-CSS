@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário </title>
+</head>
+<body>
+    <h1> Exemplo de Formulário: </h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend> Sexo </legend>
+            <input type="radio" name="sexo" id="sex_masc" value="M"> <label for="sex_masc"> Masculino </label> <br> <!-- value é a informação que vai ser enviada -->
+            <input type="radio" name="sexo" id="sex_fem" checked value="F"> <label for="sex_fem"> Feminino </label> <!-- checked = começa marcado -->
+            <!-- inputs do tipo "radio" precisam ter o mesmo "name" -->
+        </fieldset>
+
+        <fieldset>
+            <legend> Esportes favoritos </legend>
+            <input type="checkbox" name="esporte_1" id="soccer" checked> <label for="soccer"> Futebol </label> <br> 
+            <input type="checkbox" name="esporte_2" id="basketball"> <label for="basketball"> Basquete </label> <br>
+            <input type="checkbox" name="esporte_3" id="volleyball" checked> <label for="volleyball"> Vôlei </label> <br>
+            <input type="checkbox" name="esporte_4" id="tenis"> <label for="tenis"> Tênis </label>
+            <!-- 
+            sem value a informação enviada é apenas se o checkbox ta "on"
+            file:///C:/Users/Gabriel/Desktop/Nova%20pasta/CursoemVideo(HTLM-CSS)/HTML-CSS/ex025/cadastro.php?sexo=F&esporte_1=on&esporte_3=on
+            -->
+        </fieldset>
+
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+    </form>
+</body>
+</html>

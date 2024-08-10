@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário </title>
+</head>
+<body>
+    <h1> Exemplo de Formulário </h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="n_1"> 1º Número: </label>
+            <input type="number" name="num_1" id="n_1" required min="-99" max="99" oninput="add.innerHTML = Number(n_1.value) + Number(n_2.value)">
+            <!-- dentro de oninput vai uma parte de JavaScript -->
+        </p>
+
+        <p>
+            <label for="n_2"> 2º Número: </label>
+            <input type="number" name="num_2" id="n_2" required min="-99" max="99" oninput="add.innerHTML = Number(n_1.value) + Number(n_2.value)">
+        </p>
+
+        <p>
+            <label for="add"> Soma: </label>
+            <output name="soma" id="add"> 0 </output>
+            <!-- informação do output não é eviada nem com method get nem post -->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

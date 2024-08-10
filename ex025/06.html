@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário </title>
+</head>
+<body>
+    <h1> Exemplo de Formulário </h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="color"> Cor: </label>
+            <input type="color" name="cor" id="color" value="#6495ed">
+            <input type="color" name="cor" id="color" value="#00ff00"> <!-- verde -->
+            <input type="color" name="cor" id="color" value="#ff0000"> <!-- vermelho -->
+            <input type="color" name="cor" id="color" value="#0000ff"> <!-- azul -->
+        </p>
+
+        <p>
+            <label for="lvl"> Nível de Satisfação: </label>
+            <input type="range" name="nvl" id="lvl" min="0" max="4" value="1">
+        </p>
+
+        <p>
+            <label for="file"> Foto: </label>
+            <input type="file" name="arquivo" id="file">
+        </p>
+
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+    </form>
+</body>
+</html>
